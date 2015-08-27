@@ -1,0 +1,19 @@
+body {
+  background-color:#4E8EF7;
+  color:#fff;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+a {
+  color:#fff;
+  text-decoration:none;
+}
+
+.container-full {
+  padding-top: 15%;
+  background-color:#4E8EF7;
+  margin: 0 auto;
+}
