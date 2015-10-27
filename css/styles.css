@@ -27,6 +27,7 @@ a:hover, a:active {
   padding-top: 7%;
   background-color: #4E8EF7;
   margin: 0 auto;
+  display: inline-block;
 }
 
 /* Footer */
