@@ -1,19 +1,44 @@
+/* General */
 body {
   background-color:#4E8EF7;
   color:#fff;
 }
 
+a {
+  color: #fff;
+  text-decoration:none;
+}
+
+a:hover, a:active {
+  color: #fff;
+}
+
+/* Header */
 .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 
-a {
-  color:#fff;
-  text-decoration:none;
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Main */
 .container-full {
-  padding-top: 15%;
-  background-color:#4E8EF7;
+  padding-top: 7%;
+  background-color: #4E8EF7;
   margin: 0 auto;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#ionic-brazil {
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+  font-size: 12px;
 }
