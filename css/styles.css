@@ -1,6 +1,5 @@
 /* General */
 body {
-  background-color:#4E8EF7;
   color:#fff;
 }
 
@@ -18,14 +17,43 @@ a:hover, a:active {
   background-color: #fff;
 }
 
-.nav > li > a:focus, .nav > li > a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.nav > li > a:focus, .nav > li > a {
+  margin: 0;
+  padding-right: 26px !important;
+  padding-left: 26px !important;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 3px solid transparent;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: transparent;
 }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  border-top: 3px solid #B5CAFF ;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: rgb(117, 151, 212);
+  color: white;
+  opacity: 1;
+}
+
+.nav > li > a:focus, .nav > li > a:active {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 3px solid transparent;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: transparent;
+}
+
+
 
 /* Main */
 .container-full {
   padding-top: 7%;
-  background-color: #4E8EF7;
   margin: 0 auto;
   display: inline-block;
 }
@@ -41,4 +69,61 @@ footer {
   width: 100%;
   display: block;
   font-size: 12px;
+}
+
+/* Change placeholder color */
+.form-control::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.7); }
+.form-control:-moz-placeholder { color: rgba(255, 255, 255, 0.7); }
+.form-control::-moz-placeholder { color: rgba(255, 255, 255, 0.7); }
+.form-control:-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }
+
+.horizontal-gradient {
+  background: #2155aa;
+  background: -moz-linear-gradient(left, #2155aa 0%, #3e72c6 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #2155aa), color-stop(100%, #3e72c6));
+  background: -webkit-linear-gradient(left, #2155aa 0%, #3e72c6 100%);
+  background: -o-linear-gradient(left, #2155aa 0%, #3e72c6 100%);
+  background: -ms-linear-gradient(left, #2155aa 0%, #3e72c6 100%);
+  background: linear-gradient(to right, #2155aa 0%, #3e72c6 100%);
+}
+
+.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+  border-radius: 0;
+}
+
+
+/* Input and Button base in Ionic page */
+.input-ionic:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.input-ionic {
+  border: none;
+  background: #7597d4;
+  font-size: 13px;
+  color: white !important;
+  box-shadow: none;
+  font-weight: normal;
+}
+
+.btn-ionic {
+  padding: 7px 12px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+  color: #3F89FF;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.btn-ionic:hover {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  background: #FFF;
+  opacity: 1;
+  color: #3F89FF;
+  text-decoration: none;
 }
