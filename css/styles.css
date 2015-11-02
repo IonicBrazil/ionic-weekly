@@ -49,26 +49,26 @@ a:hover, a:active {
   border-top-color: transparent;
 }
 
-
-
 /* Main */
 .container-full {
   padding-top: 7%;
   margin: 0 auto;
-  display: inline-block;
 }
 
 /* Footer */
 footer {
   margin-top: 50px;
   text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 
 #ionic-brazil {
   margin-top: 10px;
   width: 100%;
   display: block;
-  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
 }
 
 /* Change placeholder color */
